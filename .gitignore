@@ -1,0 +1,32 @@
+# Dataset (not distributed - see README, Data availability)
+split_data3/
+data.yaml
+
+# Prepared HDF5 datasets
+*.h5
+
+# Trained model weights (not distributed)
+*.pth
+*.pt
+*.keras
+*_training_config.json
+
+# Prediction exports and ensemble outputs
+probability_masks/
+test_masks/
+ensemble_binary/
+ensemble_probability/
+
+# Framework run directories
+yolo11_river_plumes/
+mask2former_results/
+runs/
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,30 @@
+# Core deep-learning frameworks
+# Keras models (notebooks 00-09) run on TensorFlow >= 2.16 with the legacy
+# Keras package (tf-keras); set TF_USE_LEGACY_KERAS=1 in those notebooks.
+tensorflow==2.16.1
+tf-keras==2.16.0
+
+# PyTorch stack for SegFormer / Mask2Former (notebooks 11, 12)
+torch==2.2.2
+torchvision==0.17.2
+transformers==4.40.2
+
+# YOLO11-seg (notebook 10)
+# NOTE: YOLO11 models (yolo11l-seg.pt, the C3k2/C2PSA modules) exist only in
+# ultralytics >= 8.3.0 (2024-09-30); 8.2.x wheels contain no yolo11 configs
+# and cannot load the checkpoint. Keep the `%pip install` cell of notebook 10
+# pinned to the same version.
+ultralytics==8.3.40
+
+# Scientific / imaging / IO
+numpy==1.26.4
+scipy==1.13.0
+scikit-image==0.23.2
+scikit-learn==1.4.2
+opencv-python==4.9.0.80
+opencv-contrib-python==4.9.0.80   # ximgproc.guidedFilter used in notebook 15
+Pillow==10.3.0
+h5py==3.11.0
+pandas==2.2.2
+matplotlib==3.8.4
+tqdm==4.66.4
